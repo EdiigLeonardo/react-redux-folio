@@ -129,11 +129,6 @@ const Navbar = ({isThemeChanged}) => {
                 <Icon><FontAwesomeIcon icon={faGithubAlt} /></Icon>
               </ListItemLink>
             </ListItem>
-            <ListItem>
-              <ListItemLink href="ediigmelchiior@gmail.com">
-                <Icon><FontAwesomeIcon icon={faGooglePlus} /></Icon>
-              </ListItemLink>
-            </ListItem>
           </List>
         </Links>
         <Icons>
