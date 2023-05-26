@@ -72,7 +72,7 @@ const Title = styled.h1`
   }
 
   @media only screen and (max-width: 500px) {
-    font-size: 52px;
+    font-size: 24px;
     margin-bottom: 2px;
     margin-top: 2px;
   }
@@ -89,21 +89,22 @@ const Habilities = styled.h2`
   margin-bottom: 2px;
   color: #fbf7ff;
   max-height: 90%;
+  overflow-y: auto;
 
   @media only screen and (max-width: 1000px) {
     font-size: 48px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
     margin-top: 2px;
   }
 
   @media only screen and (max-width: 500px) {
     font-size: 36px;
-    margin-bottom: 1px;
+    margin-bottom: 4px;
     margin-top: 1px;
   }
   @media only screen and (max-width: 300px) {
     font-size: 24px;
-    margin-bottom: 1px;
+    margin-bottom: 4px;
     margin-top: 1px;
   }
 `;
@@ -161,7 +162,7 @@ const Desc = styled.p`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   background-color: #79B5BA;
   color: #FBF7FF;
   font-weight: bold;
@@ -178,6 +179,10 @@ const Button = styled.button`
 `;
 
 const Who = () => {
+  const handleSeeWorks = () =>{
+    return window.location.href("https://github.com/EdiigLeonardo?tab=repositories")
+  }
+
   return (
     <Section>
       <Container>
@@ -200,7 +205,7 @@ const Who = () => {
             Viewing my projects may cause uncontrollable laughter, excessive joy, and occasional snorting. 
             Proceed with caution!
           </Desc>
-          <Button>See our works</Button>
+          <Button href = "https://github.com/EdiigLeonardo?tab=repositories">See our works</Button>
         </Right>
       </Container>
     </Section>
