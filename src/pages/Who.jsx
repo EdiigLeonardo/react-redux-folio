@@ -189,7 +189,7 @@ const Who = () => {
         <Left>
           <Habilities>Technical Skills</Habilities>
           <Description>Proficient in JavaScript, SQL and Python</Description>
-          <Description>Experience with ReactJs, Angular, NodeJs, ExpressJs, Flask, NextJs</Description>
+          <Description>Experience with React, Angular, NodeJs, ExpressJs, Flask, NextJs</Description>
           <Description>Familiarity with Git, Rest, Jira, Redux, HTML/CSS, TailwindCSS, SCSS</Description>
           <Description>Knowledge of Docker, Kubernetes</Description>
 
@@ -205,7 +205,7 @@ const Who = () => {
             Viewing my projects may cause uncontrollable laughter, excessive joy, and occasional snorting. 
             Proceed with caution!
           </Desc>
-          <Button href = "https://github.com/EdiigLeonardo?tab=repositories">See our works</Button>
+          <Button href = "https://github.com/EdiigLeonardo?tab=repositories">See my works</Button>
         </Right>
       </Container>
     </Section>

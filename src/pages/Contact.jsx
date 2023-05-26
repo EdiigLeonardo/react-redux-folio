@@ -105,23 +105,6 @@ const Contact = () => {
     { headers: {'Accept': 'application/json'}})
     .then(response => console.log(response))
     .catch(error => console.log(error))
-
-    /* emailjs
-      .sendForm(
-        "service_id",
-        "template_id",
-        ref.current,
-        "public_key"
-      )
-      .then(
-        (result) => {
-          setSuccess(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccess(false);
-        }
-      ); */
   };
   return (
     <Section>

@@ -13,8 +13,12 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
   max-width: 100vw;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     min-height: 200vh;
+  }
+  @media only screen and (max-width: 400px) {
+    flex-direction: column;
+    min-height: 100vh;
   }
 `;
 
@@ -26,7 +30,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
   }
@@ -75,14 +79,7 @@ const WhatWeDo = styled.div`
   gap: 10px;
 `;
 
-const Line = styled.img`
-  height: 5px;
-  font-weight: bolder;
-`;
 
-const Subtitle = styled.h2`
-  color: #79B5BA;
-`;
 
 const Span = styled.span`
   color: #79B5BA;
@@ -120,8 +117,12 @@ const Right = styled.div`
   position: relative;
   cursor: pointer;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 100px) {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 

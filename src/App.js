@@ -23,7 +23,6 @@ const Section = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
-
   color:  #FDEAFF;
   background: url("./img/bg.jpeg");
   max-width: 100vw;
