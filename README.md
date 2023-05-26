@@ -2,6 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+    /* "build": "npm install && react-scripts build && npm install -g serve && serve -s build", */
 ## Available Scripts
 
 In the project directory, you can run:

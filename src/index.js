@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import themeReducer from './store/reducers';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+<link rel="icon" type="image/jpg" href="favicon.ico"/>
 
 
 const store = createStore(themeReducer);
