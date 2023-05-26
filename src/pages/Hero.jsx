@@ -8,15 +8,13 @@ import { toggleImageClick } from '../store/action';
 
 const Section = styled.div`
   height: 100vh;
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   max-width: 100vw;
-
   @media only screen and (max-width: 768px) {
-    min-height: 400vh;
+    min-height: 200vh;
   }
 `;
 
@@ -121,15 +119,28 @@ const Right = styled.div`
   width: 50%;
   position: relative;
   cursor: pointer;
+
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
   }
+
 `;
 
-const OutCanvas = styled.div`
-  max-width: 100vw;
-`
+const StyledCanvas = styled(Canvas)`
+  height: 80%;
+  position: absolute;
+  z-index: 0;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+    /* width: 319.792px;
+    margin: auto;
+    height: 212px;
+    touch-action: none; */
+  }
+  }
+`;
 
 const Img = styled.img`
   max-width: 600px;
@@ -204,12 +215,9 @@ const Hero = () => {
           <Title>Hello World! I'm Edig Leonardo</Title>
           <Span>Junior Software Engineer / Full Stack Developer</Span>
         </Left>
-        <Right
-            onClick={handleClick}       
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
-          <Canvas style={{ height: '700px' }}>
-            <Suspense fallback={null}>
+        <Right>
+        <StyledCanvas>
+          <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
@@ -217,14 +225,17 @@ const Hero = () => {
                 <MeshDistortMaterial
                   color="#79B5BA"
                   attach="material"
-                  distort={isHovered ? 0.8 : .5}
-                  speed={isHovered ? 5 : 2}
+                  distort={0.8}
+                  speed={4}
                 />
               </Sphere>
-            </Suspense>
-          </Canvas>
+          </Suspense>
+        </StyledCanvas>
           <Img
             src="./img/moon.png"
+            onClick={handleClick}       
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           />
         </Right>
       </Container>

@@ -19,7 +19,6 @@ const Section = styled.div`
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
-  
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
@@ -28,7 +27,6 @@ const Section = styled.div`
   color:  #FDEAFF;
   background: url("./img/bg.jpeg");
   max-width: 100vw;
-  
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   padding-left: 4px;
@@ -72,7 +70,6 @@ function App({ isThemeChanged }) {
 }
 
 const mapStateToProps = (state) => {
-  console.log("isThemeChanged:  ...", state.isThemeChanged)
   return {
     isThemeChanged: state.isThemeChanged,
   };

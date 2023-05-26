@@ -14,15 +14,18 @@ const Section = styled.div`
   top: 0;
   z-index: 4;
   width: 100%;
+
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
+
+
 `;
 
 const Container = styled.div`
   background-color: #333996;
   display: flex;
-  flex: 0.5;
+  flex: 1;
   justify-content: space-evenly;
   gap: 12px;
   align-items: center;
@@ -38,10 +41,6 @@ const Links = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
-
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
 `;
 
 const Logo = styled.img`
