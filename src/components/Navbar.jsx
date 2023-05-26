@@ -5,6 +5,7 @@ import { faLinkedinIn, faGithubAlt, faGooglePlus } from '@fortawesome/free-brand
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { connect, useDispatch } from 'react-redux';
 import { toggleImageClick } from '../store/action';
+import resume from '../assets/resume.pdf';
 
 const Section = styled.div`
   display: flex;
@@ -84,7 +85,8 @@ const Icon = styled.span`
   cursor: pointer;
 `;
 
-const Button = styled.button`
+const Button = styled.a`
+  text-decoration: none;
   min-width: 10em;
   padding: 10px;
   background-color: #79B5BA;
@@ -139,7 +141,7 @@ const Navbar = ({isThemeChanged}) => {
               <ListItemLink onClick={handleClick}><Icon><FontAwesomeIcon icon={isThemeChanged? faSun : faMoon} /></Icon></ListItemLink>
             </ListItem>
           </List>
-          <Button onClick={()=>{handleDownload()}}>Download CV</Button>
+          <Button href={resume}download="Edig-Resume">Download CV</Button>
         </Icons>
       </Container>
     </Section>
