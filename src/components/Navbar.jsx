@@ -83,6 +83,7 @@ const Icons = styled.div`
 
 const Icon = styled.span`
   cursor: pointer;
+  text-align: center;
 `;
 
 const Button = styled.a`

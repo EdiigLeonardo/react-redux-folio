@@ -16,6 +16,7 @@ code {
 
 button, a{
   text-transform: uppercase;
+  text-align: center;
 }
 
 a{
