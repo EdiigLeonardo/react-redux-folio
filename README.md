@@ -73,6 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Deploy the Docker image:
 ```sh
-    docker build -t reactPortiflio_w_Redux_StyledComponents_MongoDb .
-    docker run -p 3000:3000 reactPortiflio_w_Redux_StyledComponents_MongoDb
+    docker build -t react-redux-folio .
+    docker run -p 3000:3000 react-redux-folio
 ```
