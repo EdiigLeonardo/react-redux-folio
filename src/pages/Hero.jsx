@@ -8,6 +8,7 @@ import { toggleImageClick } from '../store/action';
 
 const Section = styled.div`
   height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,48 +74,14 @@ const Title = styled.h1`
 
 `;
 
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-
 
 const Span = styled.span`
   color: #79B5BA;
   font-weight: bolder;
 `
 
-const Desc = styled.p`
-  font-size: 24px;
-  color: #FBF7FF;
-  font-weight: bolder;
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
-  }
-`;
-
-const Button = styled.button`
-  background-color: #79B5BA;
-  color: #FBF7FF;
-  font-weight: bold;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover{
-    border: 1px solid #79B5BA;
-    outline: 1px solid #79B5BA;
-    background-color: #005CB3;
-  }
-`;
-
 const Right = styled.div`
   width: 50%;
-  position: relative;
   cursor: pointer;
 
   @media only screen and (max-width: 100px) {
@@ -148,13 +115,14 @@ const Img = styled.img`
   height: 600px;
   object-fit: contain;
   position: absolute;
-  top: 0;
+  top: 50%;
   bottom: 0;
-  left: 0;
+  left: 50%;
   right: 0;
   margin: auto;
   cursor: pointer;
   animation: animate 2s infinite ease-out alternate;
+  transform: translate(-50%, -50%);
 
   @media only screen and (max-width: 768px) {
     width: 300px;

@@ -114,7 +114,7 @@ const Contact = () => {
           action='https://getform.io/f/dd30355a-2c79-40c8-b0fa-0b5826778f3d'
           method='POST'
           encType='multipart/form-data'>
-            <Title>Contact Us</Title>
+            <Title>Contact </Title>
             <Input placeholder="Name" name="name" />
             <Input placeholder="Email" name="email" />
             <TextArea
@@ -122,7 +122,7 @@ const Contact = () => {
               name="message"
               rows={10}
             />
-            <Button type="submit">Send</Button>
+            <Button type="submit">Submit</Button>
             {success &&
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>
