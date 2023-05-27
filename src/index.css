@@ -26,3 +26,11 @@ a{
   text-decoration: none;
   color: #FBF7FF;
 }
+
+a:visited{
+  color: #FBF7FF;
+}
+
+a:visited:hover{
+  color: #FBF7FF;
+}
