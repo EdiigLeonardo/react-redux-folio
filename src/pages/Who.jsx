@@ -205,7 +205,7 @@ const Who = () => {
             Viewing my projects may cause uncontrollable laughter, excessive joy, and occasional snorting. 
             Proceed with caution!
           </Desc>
-          <Button href = "https://github.com/EdiigLeonardo?tab=repositories">See my works</Button>
+          <Button href = "https://edig-folio-nextjs.netlify.app/#projects">See my works</Button>
         </Right>
       </Container>
     </Section>
