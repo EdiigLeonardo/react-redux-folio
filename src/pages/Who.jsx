@@ -180,7 +180,7 @@ const Button = styled.a`
 
 const Who = () => {
   const handleSeeWorks = () =>{
-    return window.location.href("https://github.com/EdiigLeonardo?tab=repositories")
+    return window.location.href("https://edig-folio-nextjs.netlify.app/#projects")
   }
 
   return (
