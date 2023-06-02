@@ -182,7 +182,7 @@ const Hero = () => {
       <Container>
         <Left>
           <Title>Hello World! I'm Edig Leonardo</Title>
-          <Span>Junior Software Engineer / Full Stack Developer</Span>
+          <Span>Software Engineer / Full Stack Developer</Span>
         </Left>
         <Right>
         <StyledCanvas>
